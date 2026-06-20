@@ -3,42 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>링크 메뉴</title>
+    <title>전기공학 학습 메뉴</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        nav {
-            background-color: #333;
-            padding: 10px;
+        body {
+            font-family: "Malgun Gothic", sans-serif;
+            background: #f4f6f9;
+            padding: 20px;
         }
 
-        nav a {
-            color: white;
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        .menu-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .menu-item {
+            display: block;
             text-decoration: none;
-            margin-right: 20px;
-            padding: 8px 12px;
+            background: #ffffff;
+            color: #222;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.2s ease;
         }
 
-        nav a:hover {
-            background-color: #555;
-            border-radius: 4px;
+        .menu-item:hover {
+            background: #0078d7;
+            color: white;
+            transform: translateY(-3px);
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="https://www.google.com" target="_blank">메뉴 1</a>
-        <a href="naver.html" target="_blank">메뉴 2</a>
-        <a href="https://www.daum.net" target="_blank">메뉴 3</a>
-        <a href="https://www.youtube.com" target="_blank">메뉴 4</a>
-    </nav>
+    <h1>전기기사 학습 메뉴</h1>
 
-    <h1>환영합니다</h1>
-    <p>상단 메뉴를 클릭해 이동할 수 있습니다.</p>
+    <div class="menu-container">
+        <a href="circuit.html" class="menu-item">1. 회로 이론</a>
+
+        <a href="control.html" class="menu-item">2. 제어 공학</a>
+
+        <a href="electromagnetics.html" class="menu-item">3. 전기 자기학</a>
+
+        <a href="power.html" class="menu-item">4. 전력공학</a>
+
+        <a href="machines.html" class="menu-item">5. 전기 기기</a>
+
+        <a href="kec.html" class="menu-item">6. KEC 설비 기준</a>
+    </div>
 
 </body>
 </html>
