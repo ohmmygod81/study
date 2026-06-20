@@ -1,73 +1,166 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>전기공학 학습 메뉴</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>전기기사 학습 시스템</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
+    body {
+        font-family: "Malgun Gothic", sans-serif;
+        background: #f4f6f9;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #222;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    .menu-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .menu-item {
+        display: block;
+        text-decoration: none;
+        color: #222;
+        background: #fff;
+        padding: 25px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: all 0.2s ease;
+    }
+
+    .menu-item:hover {
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .menu-item:active {
+        transform: scale(0.98);
+    }
+
+    .theory {
+        border-left: 8px solid #673AB7;
+    }
+    .circuit {
+        border-left: 8px solid #2196F3;
+    }
+    .control {
+        border-left: 8px solid #4CAF50;
+    }
+    .electromagnetics {
+        border-left: 8px solid #FF9800;
+    }
+    .power {
+        border-left: 8px solid #F44336;
+    }
+    .machines {
+        border-left: 8px solid #009688;
+    }
+    .kec {
+        border-left: 8px solid #795548;
+    }
+
+    .theory:hover {
+        background: #673AB7;
+    }
+    .circuit:hover {
+        background: #2196F3;
+    }
+    .control:hover {
+        background: #4CAF50;
+    }
+    .electromagnetics:hover {
+        background: #FF9800;
+    }
+    .power:hover {
+        background: #F44336;
+    }
+    .machines:hover {
+        background: #009688;
+    }
+    .kec:hover {
+        background: #795548;
+    }
+
+    @media (prefers-color-scheme: dark) {
         body {
-            font-family: "Malgun Gothic", sans-serif;
-            background: #f4f6f9;
-            padding: 20px;
+            background: #1e1e1e;
         }
 
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #222;
+        h1,
+        .menu-item {
+            color: white;
         }
 
-        .menu-container {
-            max-width: 600px;
-            margin: 0 auto;
+        .subtitle {
+            color: #ccc;
         }
 
         .menu-item {
-            display: block;
-            text-decoration: none;
-            background: #ffffff;
-            color: #222;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-align: center;
-            padding: 30px;
-            margin-bottom: 15px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: all 0.2s ease;
+            background: #2d2d2d;
         }
-
-        .menu-item:hover {
-            background: #0078d7;
-            color: white;
-            transform: translateY(-3px);
-        }
-    </style>
+    }
+</style>
 </head>
+
 <body>
 
-    <h1>전기기사 학습 메뉴</h1>
+<h1>⚡ 전기기사 학습 시스템</h1>
+<p class="subtitle">
+과목을 선택하여 학습을 시작하세요.
+</p>
 
-    <div class="menu-container">
-        <a href="circuit.html" class="menu-item">1. 회로 이론</a>
+<div class="menu-container">
 
-        <a href="control.html" class="menu-item">2. 제어 공학</a>
+    <a href="theory.html" class="menu-item theory">
+        📘 1. 전기기사 필기 이론
+    </a>
 
-        <a href="electromagnetics.html" class="menu-item">3. 전기 자기학</a>
+    <a href="circuit.html" class="menu-item circuit">
+        ⚡ 2. 회로 이론
+    </a>
 
-        <a href="power.html" class="menu-item">4. 전력공학</a>
+    <a href="control.html" class="menu-item control">
+        🎛 3. 제어 공학
+    </a>
 
-        <a href="machines.html" class="menu-item">5. 전기 기기</a>
+    <a href="electromagnetics.html" class="menu-item electromagnetics">
+        🧲 4. 전기 자기학
+    </a>
 
-        <a href="kec.html" class="menu-item">6. KEC 설비 기준</a>
-    </div>
+    <a href="power.html" class="menu-item power">
+        🔌 5. 전력공학
+    </a>
+
+    <a href="machines.html" class="menu-item machines">
+        ⚙ 6. 전기 기기
+    </a>
+
+    <a href="kec.html" class="menu-item kec">
+        📗 7. KEC 설비 기준
+    </a>
+
+</div>
 
 </body>
 </html>
